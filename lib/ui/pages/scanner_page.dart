@@ -124,15 +124,15 @@ class _ScannerPageState extends State<ScannerPage> {
                   divider14,
                   ButtonNormalWidget(
                     text: "Registrar QR",
-                    onPressed: !isUrl
+                    onPressed: isUrl
                         ? () {
                             Navigator.pop(context);
                             Navigator.push(
                               context,
                               MaterialPageRoute(
                                 builder: (context) => RegisterPage(
-                                  valueQR: "https://github.com/juliuscanute/qr_code_scanner/issues/560",
-                                  //valueQR: valueUrl,
+                                  //valueQR: "https://github.com/juliuscanute/qr_code_scanner/issues/560",
+                                  valueQR: valueUrl,
                                 ),
                               ),
                             );
